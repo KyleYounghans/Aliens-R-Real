@@ -22,7 +22,7 @@
 
         <div class="navbar-header">
 
-          <a class="navbar-brand" href="index.html" style="font-family: 'Michroma', sans-serif;">UFO Sightings
+          <a class="navbar-brand" href="index.html" style="font-family: Comic Sans MS, sans-serif; color: lime">UFO Sightings
 
             <img class="nav-ufo" src="static\img\ufo.svg" alt="ufo">
 
@@ -34,37 +34,38 @@
 
     </nav>
 
-    <div class="hero text-center">
+	
+	<div class="jumbotron jumbrotron-fluid text-center" style="background-image: url(https://assets.answersingenesis.org/img/cms/content/contentnode/header_image/1606_DoIBelieveInUFOs_WebBanner_945x300.jpg); background-size: cover; height: auto;">
+         <div class="container push-spaces"> 
+			<h1 style="font-family: Comic Sans MS, cursive, sans-serif; text-shadow: 1px 1px 2px black, 0 0 15px lime, 0 0 5px lime;">UFO Sightings</h1>
+			<p style="font-family: Comic Sans MS, cursive, sans-serif; color: lime; text-shadow: 1px 1px 2px black, 0 0 15px #b4b4b4, 0 0 5px #b4b4b4; font-size: 25px;">The Truth is Out There</p>
+		</div>
+            
+        </div>
 
-      <h1 style="font-family: 'Michroma', sans-serif; text-shadow: 1px 1px 2px black, 0 0 25px whitesmoke, 0 0 5px #618D1B;">UFO Sightings</h1>
+	<div class="wrapper">
 
-      <p style="color: #618D1B; text-shadow: 1px 1px 2px black, 0 0 25px whitesmoke, 0 0 5px #618D1B; font-size: 30px;">The Truth is Out There</p>
+                <div class="row margintop">
 
-    </div>
+                  <div class="col-md-2">
 
-    <div class="container">
+                    <aside class="filters">
 
-      <div class="row margin-top-50">
+                      <div class="panel panel-default">
 
-        <div class="col-md-2">
+                        <div class="panel-heading" style="background-color: black;">Filter Search</div>
+						<hr>
 
-          <aside class="filters">
+                        <div class="panel-body">
 
-            <div class="panel panel-default">
+                          <form>
 
-              <div class="panel-heading" style="font-family: 'Michroma', sans-serif;">Filter Search</div>
+                            <div class="form-group">
 
-              <div class="panel-body">
+                              <ul class="list-group" id="filters">
 
-                <form>
-
-                  <div class="form-group">
-
-                    <ul class="list-group" id="filters" >
-
-                     
-					        <li class="filter list-group-item" style="background-color: black;">
-
+                                <li class="filter list-group-item" style="background-color: black;">
+ 
                                   <label for="date">Filter by Date</label>
 
                                   <input class="form-control" id="datetime" type="text" placeholder="1/01/2010">
@@ -75,7 +76,7 @@
 
                                   <label for="date">Filter by City</label>
 
-                                  <input class="form-control" id="city" type="text" placeholder="minneapolis">
+                                  <input class="form-control" id="city" type="text" placeholder="city">
 
                                 </li>
 
@@ -83,7 +84,7 @@
 
                                   <label for="date">Filter by State</label>
 
-                                  <input class="form-control" id="state" type="text" placeholder="mn">
+                                  <input class="form-control" id="state" type="text" placeholder="state">
 
                                 </li>
 
@@ -91,34 +92,41 @@
 
                                   <label for="date">Filter by Country</label>
 
-                                  <input class="form-control" id="country" type="text" placeholder="us">
+                                  <input class="form-control" id="country" type="text" placeholder="country">
 
                                 </li>
-                    </ul>
+
+                                <li class="filter list-group-item"style="background-color: black;">
+
+                                  <label for="date">Filter by Shape</label>
+
+                                  <input class="form-control" id="shape" type="text" placeholder="shape">
+
+                                </li>
+
+                              </ul>
+
+                            </div>
+							<hr><br>
+                            <button id="filter-btn" type="submit" class="btn btn-default">Filter Table</button>
+
+                            <button id="un-filter-btn" type="submit" class="btn btn-default">Reset</button>
+
+                          </form>
+
+                        </div>
+
+                      </div>
+
+                    </aside>
 
                   </div>
 
-                  <button id="filter-btn" type="submit" class="btn btn-default btn-lg btn-block">Filter Table</button>
+                  <div class="col-md-10">
 
+                    <div id="table-area" style="overflow-x:auto;">
 
-
-                  <button id="reset-btn" type="reset" class="btn btn-default btn-lg btn-block">Reset Table</button>
-
-                </form>
-
-              </div>
-
-            </div>
-
-          </aside>
-
-        </div>
-
-                    <div class="col-md-10">
-
-                    <div id="table-area" class="">
-
-                      <table id="ufo-table" class="table">
+                      <table class="table table-striped table-dark">
 
                         <thead>
 
@@ -158,13 +166,10 @@
 
         <footer class="text-center">
 
-                <span class="bottom">UFO Sightings</span>
+                <span class="bottom">Aliens-R-Real</span>
 
             </footer>
 
-            <!-- end footer section -->
-
-              <script src="js/jquery-3.3.1.js"></script>
 
               <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script> 
 
@@ -172,10 +177,6 @@
 
               <script src="static/js/app.js"></script>
 
-              <script src="js/bootstrap.min.js"></script>
+        </body>
 
-</body>
-
-
-
-</html>
+    </html>

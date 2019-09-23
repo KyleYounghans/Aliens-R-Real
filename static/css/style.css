@@ -1,22 +1,8 @@
-/* /* Import fonts */
-
-@import url('https://fonts.googleapis.com/css?family=Space+Mono:700');
-
-@import url('https://fonts.googleapis.com/css?family=Lato');
-
-@import url('https://fonts.googleapis.com/css?family=Michroma');
-
-@import url('https://fonts.googleapis.com/css?family=Karla');
-
-
-
  *{
 
     box-sizing: border-box;
 
-    font-family: 'Karla', sans-serif;
-
-   
+    font-family: Verdana, Geneva, sans-serif;
 
   }
 
@@ -31,44 +17,35 @@
     padding: 0;
 
     margin: 0;
-
-    background-image: url(https://www.animateit.net/data/media/august2009/space_bg.gif); 
 	
 	background-color: black; 
 
-    
-
   }
 
-/* Make buttons more visible */
+.push-spaces
+{
+    height: 300px;
+}
 
   .btn{
 
-    background-color: rgba(97, 141, 27, 0.322); 
+    background-color: lime; 
 
+	display: block; margin: 0 auto;
+	
+	
+	border: 3px solid black;
+ 
   }
 
-
-
-  @keyframes bounce {
-
-    from { transform: translate3d(0, -50px, 0);     }
-
-    to   { transform: translate3d(0, 0px, 0); }
-
-  }
-
-
-
-  /* This CSS styles the ufo icon in the navbar */
 
   .nav-ufo {
 
-    position: absolute;
+    position: relative;
 
-    bottom: 5px;
+    bottom: 27px;
 
-    left: 200px;
+    left: 145px;
 
     width: 35px;
 
@@ -83,11 +60,11 @@
 
     border-bottom-style: solid; 
 
-    border-bottom-color: #618D1B; 
+    border-bottom-color: lime; 
 
   }
 
-  /* The wrapper contains all of the page's content besides the footer, which is pushed to the bottom of the page */
+
 
   .wrapper {
 
@@ -95,17 +72,15 @@
 
     min-height: 100%;
 
-    padding-bottom: 130px;
+    padding-bottom: 25px;
 
     overflow: auto;
 
   }
 
-  
 
-  /* The code styles the text at the bottom of the footer */
 
-  .footer > .bottom {
+  .footer {
 
     position: absolute;
 
@@ -117,15 +92,7 @@
 
     padding: 5px;
 
-    background: #1b3146;
-
-    background-color: black; 
-
-    border-top-style: groove; 
-
-    border-top-color: #618D1B; 
-
-    font-size: 2rem;
+    background: black;
 
   }
 
@@ -137,424 +104,54 @@
 
     margin: 0;
 
-
-
-
-
   }
 
   
 
 div .panel{
 
-  border-style: groove; 
+  border-style: solid; 
 
-  border-color: #618D1B; 
-
-}
-
-
-
-div .panel-heading{
-
-  background-color: black; 
-
-  border-bottom-style: groove; 
-
-  border-bottom-color: #618D1B; 
-
-}
-
-div .panel-body{
-
-  background-color: black; 
-
-}
-
-
-
-ul #filters{
-
-  background-color: black; 
-
-}
-
+  border-color: lime; 
   
+  background-color: black
 
-  /* Adding styles to the aside and filter form */
-
-  .ufo-form {
-
-    margin-top: 50px;
-
-
-
-
-
-  }
-
+}
   
 
   .filters .panel-body {
 
     padding: 0;
+	
+	background-color: black;
 
   }
 
-  
-
-  .filters {
-
-    margin-top: 10px;
-
-  }
-
-  
-
-  select {
-
-    display: block;
-
-    width: 100%;
-
-    padding: 8px;
-
-    color: #8e979f;
-
-    outline: none;
-
-  }
-
-  
-
-  #table-area th {
-
-    text-align: center;
-
-  }
-
-  
-
-  #table-area th:first-child,
-
-  #table-area th:nth-child(2),
-
-  #table-area th:nth-child(6) {
-
-    min-width: 70px;
-
-  }
-
-  
-
-  .loader {
-
-    margin-top: 50px;
-
-  }
-
-  
-
-  .margin-top-50 {
-
-    margin-top: 50px;
-
-  }
-
-  
-
-  /* The styles for the parallax */
-
-  .hero {
-
-    position: relative;
-
-    height: 550px;
-
-    padding: 20px;
-
-    margin: 0;
-
-    background: black;
-
-    background-image: url("../img/nasa.jpg");
-
-    background-attachment: fixed;
-
-    background-position: bottom center;
-
-    background-size: cover;
-
-
-
-  }
-
-  
-
-  .hero h1 {
-
-    margin-top: 200px;
-
-    font-size: 0.1rem;
-
-    animation: title 1.2s forwards linear;
-
-  }
-
-  
-
-  .hero p {
-
-    font-size: 2rem;
-
-    opacity: 0;
-
-    animation: subtitle 1.2s forwards linear;
-
-    animation-delay: 1.2s;
-
-  }
-
-  
-
-  /* input placeholder color changes */
-
-  .form-control::-webkit-input-placeholder {
-
-    /* Chrome/Opera/Safari */
-
-    color: #8e979f;
-
-  }
-
-  
-
-  .form-control::-moz-placeholder {
-
-    /* Firefox 19+ */
-
-    color: #8e979f;
-
-  }
-
-  
-
-  .form-control:-ms-input-placeholder {
-
-    /* IE 10+ */
-
-    color: #8e979f;
-
-  }
-
-  
-
-  .form-control:-moz-placeholder {
-
-    /* Firefox 18- */
-
-    color: #8e979f;
-
-  }
-
-  
-
-
-
-  table{
-
-    /* background-color: #8d8d8d;  */
-
-    border-style: groove; 
-
-    border-color: #618D1B; 
-
-  }
-
-  /* media queries which will only be activated at specific screen sizes */
-
-  @media (max-width: 800px) {
-
-    #table-area td {
-
-      font-size: 1em;
-
-    }
-
-  }
-
-
-
-  
-
-.table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
-
-   /* background-color: rgba(97, 141, 27, 0.322);  */
-
-   background-color: #1F2D09; 
-
+ 
+  table {
+	
+	border-style: solid ; 
+    border-color: lime; 
+	
 }
 
+th, td {
   
+  text-align: left;
+  padding: 8px;
+  border: 1px solid lime;
+ 
+}
+
+hr {
+width: 100%;
+height: 3px;
+margin-left: auto;
+margin-right: auto;
+background-color:lime;
+border: 0 none;
+margin-top: 0px;
+margin-bottom: 0px;
+}
 
-  @media (max-width: 500px) {
 
-    #table-area thead {
-
-      display: none;
-
-    }
-
-  
-
-    #table-area tr td:first-child {
-
-      font-size: 1.8em;
-
-      font-weight: bold;
-
-      background: #1b3146;
-
-    }
-
-  
-
-    #table-area tr td:last-child {
-
-      margin-bottom: 20px;
-
-    }
-
-  
-
-    #table-area tr td:last-child::after {
-
-      display: block;
-
-      width: 100%;
-
-      height: 1px;
-
-      margin-top: 20px;
-
-      content: " ";
-
-      background: aliceblue;
-
-
-
-    }
-
-  
-
-    #table-area td {
-
-      font-size: 1.25em;
-
-    }
-
-  
-
-    #table-area tbody td {
-
-      display: block;
-
-      text-align: center;
-
-    }
-
-  
-
-
-
-    #table-area tbody td::before {
-
-      display: block;
-
-      font-size: 1.4em;
-
-      font-weight: bold;
-
-      text-align: center;
-
-      content: attr(data-th);
-
-
-
-    }
-
-  
-
-    .hero h1 {
-
-      animation: smaller-title 1.2s forwards linear;
-
-    }
-
-  }
-
-  
-
-  /* keyframe animations which will be used to animate the title */
-
-  @keyframes title {
-
-    from {
-
-      opacity: 0;
-
-    }
-
-  
-
-    to {
-
-      font-size: 7.5rem;
-
-      opacity: 1;
-
-    }
-
-  }
-
-  
-
-  @keyframes smaller-title {
-
-    from {
-
-      opacity: 0;
-
-    }
-
-  
-
-    to {
-
-      font-size: 5.5rem;
-
-      opacity: 1;
-
-    }
-
-  }
-
-  
-
-  @keyframes subtitle {
-
-    from {
-
-      opacity: 0;
-
-    }
-
-  
-
-    to {
-
-      opacity: 1;
-
-    }
-
-  }
